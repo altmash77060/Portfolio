@@ -12,12 +12,11 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-
-    <!-- Blog Page Start -->
+     <!-- Blog Page Start -->
     <section class="blog-details section">
 
         <div class="container">
@@ -226,7 +225,35 @@
     </section>
     <!-- Blog Page End -->
 
+<script>
 
+const button = document.getElementById("button1");
+
+window.addEventListener("scroll", function () {
+
+    if (window.scrollY > 300) {
+
+        button.classList.add("show");
+
+    } else {
+
+        button.classList.remove("show");
+
+    }
+
+});
+
+
+button.addEventListener("click", function () {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+});
+
+</script>
 </body>
 
 </html>
